@@ -8,7 +8,7 @@ class Solution:
     def mergeTwoLists(self, list1, list2):
         
         dummy = ListNode() #the LL is at dummy.next
-        node = dummy #pointer
+        node = dummy #changing node.next changes dummy.next
 
         while list1 and list2:
             if list1.val < list2.val:
