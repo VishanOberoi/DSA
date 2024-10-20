@@ -14,7 +14,7 @@ class Solution:
             
             left, right = dfs(node.left), dfs(node.right)
 
-            if left[0] and left[0] and abs(left[1] - right[1]) <= 1:
+            if left[0] and right[0] and abs(left[1] - right[1]) <= 1:
                 return True, 1 + max(left[1], right[1])
 
             else:
